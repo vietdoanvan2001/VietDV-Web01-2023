@@ -108,11 +108,8 @@ export default {
   },
   data() {
     return {
-      // hien form chi tiet nhan vien
       showForm: false,
-      // Hien thi popup
       showPopup: false,
-      // danh sach loi
       listError: [],
       selectedEmployee: {},
       employeeAmount: Number,
