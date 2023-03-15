@@ -82,7 +82,7 @@
 </template>
 <script>
 import moment from "moment";
-import { titleTable, questionPopup, toastActivity } from "@/js/resource.js";
+import { titleTable, questionPopup, toastActivity } from "@/js/resources.js";
 import { buttonStatus, toastStatus, defaultPagingParams } from "@/js/enum.js";
 import { deleteEmoloyeeByID } from "@/axios/controller/employee-controller.js";
 export default {

@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { warningTxt } from "@/js/resource.js";
+import { warningTxt } from "@/js/resources.js";
 import moment from 'moment'
 export default {
   created() {

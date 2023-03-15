@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import {menuItems} from '../../js/resource.js'
+import {menuItems} from '../../js/resources.js'
 export default {
     data() {
         return {
