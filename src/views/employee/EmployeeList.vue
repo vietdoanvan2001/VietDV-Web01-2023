@@ -79,6 +79,7 @@
       <m-paging 
       :employeeAmount="employeeAmount"
       @changePageSize="pagingParams.pageSize = $event"
+      @changePageNumber="pagingParams.pageNumber=$event"
       ></m-paging>
       <toast-message
         :toastStatusTxt="toastStatusTxt"
@@ -94,7 +95,7 @@ import {
   getAllEmployee,
 } from "@/axios/controller/employee-controller";
 import EmployeeDetail from "@/views/employee/EmployeeDetail.vue";
-import { toastActivity } from "@/js/resource.js";
+import { toastActivity } from "@/js/resources.js";
 import { toastStatus,defaultPagingParams } from "@/js/enum.js";
 export default {
   name: "EmployeeList",

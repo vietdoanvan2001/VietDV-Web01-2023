@@ -73,7 +73,7 @@
 
 <script>
 import { buttonStatus, keyCodeName } from "@/js/enum.js";
-import { popupTitle } from "@/js/resource.js";
+import { popupTitle } from "@/js/resources.js";
 export default {
   name: "MPopup",
   created() {

@@ -266,7 +266,7 @@ import {
   warningTxt,
   questionPopup,
   toastActivity,
-} from "../../js/resource.js";
+} from "../../js/resources.js";
 import {
   formTitle,
   genderSelection,
@@ -275,6 +275,7 @@ import {
   keyCodeName,
 } from "@/js/enum.js";
 import moment from "moment";
+import DxDateBox from 'devextreme-vue/date-box';
 import {
   putEmployee,
   addNewEmployee,
@@ -294,6 +295,9 @@ export default {
     //Biến theo dõi sự kiện close popup cảnh báo lỗi
     popupClosed: Boolean,
   },
+  components: {
+    DxDateBox
+  },  
   created() {
     this.focusField = this.listValidateField.EmployeeCode.name;
     this.isFix = this.isFixEmployee;

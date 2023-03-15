@@ -55,12 +55,11 @@
 </template>
 
 <script>
-import { warningTxt } from "@/js/resource.js";
 import {
   getAllPositions,
   getAllDepartments,
 } from "@/axios/controller/department-controller.js";
-import { listValidateField } from "@/js/resource.js";
+import { listValidateField,warningTxt } from "@/js/resources.js";
 import { detailComboboxTitle, keyCodeName } from "@/js/enum.js";
 import removeAccents from 'remove-accents';
 export default {

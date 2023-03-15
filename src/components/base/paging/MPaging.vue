@@ -8,7 +8,9 @@
             <div class="page-number">
                 <button class="pre-button">Trước</button>
                 <button class="number-button"
-                v-for="index in Array.from({ length: 4 })" :key="index"
+                :class="index == isActive? 'page-number_active':''"
+                v-for="index in amountPage" :key="index"
+                @click="chosePage(index)"
                 >{{ index }}</button>
                 <!-- <button class="number-button page-number_active">1</button>
                 <button class="number-button">2</button>
@@ -21,13 +23,30 @@
 
 <script>
 export default {
+    created() {
+        console.log(this.isActive);
+    },
+    data() {
+        return {
+            amountPage:4,
+            isActive:1
+        }
+    },
     props:{
         //Số lượng bản ghi nhận từ EmployeeList
         employeeAmount: Number
     },
     methods: {
+        //Cập nhật giá trị param paging filter khi đổi pagesize
+        //Author: VietDV(15/3/2023)
         changePageSize(pagesize){
-            this.$emit("changePageSize",pagesize);
+            this.$emit("changePageSize",pagesize); 
+        },
+
+        //Cập nhật giá trị param paging filter khi đổi trang
+        chosePage(event){
+            this.$emit("changePageNumber",event)
+            this.isActive = event;
         }
     },
 }
