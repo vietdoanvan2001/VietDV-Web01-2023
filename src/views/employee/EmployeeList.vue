@@ -99,7 +99,7 @@ import { toastStatus,defaultPagingParams } from "@/js/enum.js";
 export default {
   name: "EmployeeList",
   components: {
-    EmployeeDetail,
+    EmployeeDetail, 
   },
   created() {
     this.showLoading = true;
@@ -110,7 +110,9 @@ export default {
     return {
       // hien form chi tiet nhan vien
       showForm: false,
+      // Hien thi popup
       showPopup: false,
+      // danh sach loi
       listError: [],
       selectedEmployee: {},
       employeeAmount: Number,
