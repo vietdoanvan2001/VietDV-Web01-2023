@@ -24,7 +24,7 @@
       @updateEmployee="updateEmployee"
       @showQuestion="showQuestion"
       @refreshData="refreshData"
-      @showToastMessage="showToastMessage"
+      @showToastMessage="showToastMessage" 
       @closePopup="closePopup"
     ></EmployeeDetail>
     <div class="content-head">
