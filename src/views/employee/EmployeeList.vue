@@ -108,6 +108,7 @@ export default {
   },
   data() {
     return {
+      // hien form chi tiet nhan vien
       showForm: false,
       showPopup: false,
       listError: [],
