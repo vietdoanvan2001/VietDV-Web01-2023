@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="layout-left">
+    <m-menu></m-menu>
+  </div>
+  <div class="layout-right">
+    <m-header></m-header>
+    <m-Content></m-Content>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+
+import MHeader from './components/layout/TheHeader.vue'
+import MContent from './components/layout/TheContent.vue'
+import MMenu from './components/layout/TheMenu.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MHeader,MContent,MMenu
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
